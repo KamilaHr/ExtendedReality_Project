@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -1243,7 +1243,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -2965,6 +2965,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 895299158}
     m_Modifications:
+    - target: {fileID: 71545847968261220, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 289718394526653895, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1497528939891690101, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1839051068101373991, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2244014820272036626, guid: 813a8afaa58ba5d43af05b13670009b8,
         type: 3}
       propertyPath: m_Name
@@ -2974,6 +2994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Numberpad Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2768871557835422762, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2891523184992650562, guid: 813a8afaa58ba5d43af05b13670009b8,
         type: 3}
@@ -3035,10 +3060,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: NumberpadKey0
       objectReference: {fileID: 0}
+    - target: {fileID: 4596509006151591660, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5771819848866998501, guid: 813a8afaa58ba5d43af05b13670009b8,
         type: 3}
       propertyPath: m_Name
       value: NumberpadKey6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144456612923601014, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6680013081440448125, guid: 813a8afaa58ba5d43af05b13670009b8,
         type: 3}
@@ -3065,10 +3100,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: NumberpadKey7
       objectReference: {fileID: 0}
+    - target: {fileID: 7675345650286133260, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8352202026466617897, guid: 813a8afaa58ba5d43af05b13670009b8,
         type: 3}
       propertyPath: m_Name
       value: NumberpadKey4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020298923761534771, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101513843293891497, guid: 813a8afaa58ba5d43af05b13670009b8,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -5013,7 +5063,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -5138,7 +5188,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -6469,7 +6519,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -7390,7 +7440,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -9436,7 +9486,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -9839,7 +9889,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -10438,7 +10488,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -10597,7 +10647,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -11720,7 +11770,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 8
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
