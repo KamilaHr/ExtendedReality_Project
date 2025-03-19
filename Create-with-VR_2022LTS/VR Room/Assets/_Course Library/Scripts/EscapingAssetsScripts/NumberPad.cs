@@ -10,11 +10,19 @@ public class NumberPad : MonoBehaviour
     private string correctCode = "1234";
     private string enteredCode = "";
 
+
+    private void Start()
+    {
+        
+    }
     public void ButtonPressed(int valuePressed)
     {
+        Debug.Log("Button Pressed: " + valuePressed);
+
         if (enteredCode.Length < correctCode.Length)
         {
             enteredCode += valuePressed.ToString();
+            Debug.Log("Current Entered Code: " + enteredCode); // Debugging
             InputDisplayText.text = enteredCode;
         }
 
@@ -22,7 +30,7 @@ public class NumberPad : MonoBehaviour
         {
             if (enteredCode == correctCode)
             {
-                Debug.Log("✅ Correct Code! Spawning keycard...");
+                Debug.Log("✅ Correct Code Entered! Spawning keycard...");
                 CardSpawner.SpawnKeycard();
             }
             else
