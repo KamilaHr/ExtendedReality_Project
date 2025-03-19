@@ -12,6 +12,7 @@ TagManager:
   - Box
   - PuzzleSocket
   - PuzzlePiece
+  - Keycard
   layers:
   - Default
   - TransparentFX
