@@ -17,16 +17,16 @@ public class TouchButton : XRBaseInteractable
         buttonRenderer = GetComponent<Renderer>();
     }
 
-    protected override void OnHoverEntered(HoverEnterEventArgs args)
+    protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        base.OnHoverEntered(args);
+        base.OnSelectEntered(args);
         buttonRenderer.material = TouchedMaterial;
         LinkedKeypad.ButtonPressed(ButtonNumber);
     }
 
-    protected override void OnHoverExited(HoverExitEventArgs args)
+    protected override void OnSelectExited(SelectExitEventArgs args)
     {
-        base.OnHoverExited(args);
+        base.OnSelectExited(args);
         buttonRenderer.material = NormalMaterial;
     }
 

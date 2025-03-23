@@ -1275,19 +1275,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -1339,10 +1327,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 5
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1 &356707576
 GameObject:
@@ -2470,6 +2458,37 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &410147017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410147018}
+  m_Layer: 0
+  m_Name: DoorHandle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &410147018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410147017}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.678, y: 0.092, z: 0.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1077089204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &416132955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3279,6 +3298,98 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505849627}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &565583723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565583724}
+  - component: {fileID: 565583725}
+  m_Layer: 0
+  m_Name: KeycardSocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565583724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565583723}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0483, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1092008430}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &565583725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565583723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60523e0647cc6ab43acc73cb266a32a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 16
+  m_AttachTransform: {fileID: 0}
+  m_KeepSelectedTargetValid: 1
+  m_DisableVisualsWhenBlockedInGroup: 1
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_StartingTargetFilter: {fileID: 0}
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 1
+  m_RecycleDelayTime: 1
+  m_HoverSocketSnapping: 0
+  m_SocketSnappingRadius: 0.1
+  m_SocketScaleMode: 0
+  m_FixedScale: {x: 1, y: 1, z: 1}
+  m_TargetBoundsSize: {x: 1, y: 1, z: 1}
 --- !u!1001 &614160176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3344,7 +3455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4648481623511362516, guid: 8592aadc382995b48addf5b60d1b0506,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 565583724}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5461012317739364718, guid: 8592aadc382995b48addf5b60d1b0506,
         type: 3}
@@ -5095,19 +5210,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -5159,10 +5262,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 1
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1 &776529805 stripped
 GameObject:
@@ -5220,19 +5323,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 9
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -5284,10 +5375,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 9
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1 &804334734
 GameObject:
@@ -5732,9 +5823,9 @@ Transform:
   m_Children:
   - {fileID: 1092008430}
   - {fileID: 1452303148}
-  - {fileID: 1790453136}
   - {fileID: 1805789892}
   - {fileID: 1605046669}
+  - {fileID: 1077089204}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &915882544
@@ -6145,7 +6236,7 @@ PrefabInstance:
     - target: {fileID: 4446273721717953707, guid: 3390cbf757c20464db8495e507114ef8,
         type: 3}
       propertyPath: m_Name
-      value: NumberpadScreenDispenser (1)
+      value: NumberpadScreenDispenser
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6385,8 +6476,8 @@ Transform:
   m_GameObject: {fileID: 993714420}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8934, y: 1.3371, z: 3.0301}
-  m_LocalScale: {x: 0.1275544, y: 2.6542654, z: 5.949776}
+  m_LocalPosition: {x: 1.8934, y: 1.3371, z: 3.0442}
+  m_LocalScale: {x: 0.1275544, y: 2.6542654, z: 5.922467}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1784103105}
@@ -6551,19 +6642,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -6615,10 +6694,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 6
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1001 &1018469628
 PrefabInstance:
@@ -7158,6 +7237,311 @@ PrefabInstance:
       addedObject: {fileID: 1652749}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ddd5c018cc2acd4094172e843dc019b, type: 3}
+--- !u!1 &1077089203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077089204}
+  - component: {fileID: 1077089210}
+  - component: {fileID: 1077089209}
+  - component: {fileID: 1077089208}
+  - component: {fileID: 1077089207}
+  - component: {fileID: 1077089206}
+  - component: {fileID: 1077089211}
+  m_Layer: 0
+  m_Name: SlidingDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1077089204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077089203}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0645, y: -0.238, z: 0.8204}
+  m_LocalScale: {x: 0.10431799, y: 2.5967708, z: 1.0149971}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 410147018}
+  m_Father: {fileID: 895299158}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1077089206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077089203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_AttachTransform: {fileID: 410147018}
+  m_SecondaryAttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_ReinitializeDynamicAttachEverySingleGrab: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 0
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 8
+  m_TightenPosition: 0.1
+  m_TrackRotation: 0
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 8
+  m_TightenRotation: 0.1
+  m_TrackScale: 1
+  m_SmoothScale: 1
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
+  m_ThrowOnDetach: 0
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_RetainTransformParent: 1
+  m_AttachPointCompatibilityMode: 0
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+--- !u!54 &1077089207
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077089203}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 118
+  m_CollisionDetection: 1
+--- !u!65 &1077089208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077089203}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1077089209
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077089203}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 153bed33080d2e842978502908cc410d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1077089210
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077089203}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1077089211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077089203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae865e0280ee364ebd782df46abe0bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 0.8204
+  maxX: 0.7204
+  smoothness: 10
+  isUnlocked: 0
+  grabInteractable: {fileID: 1077089206}
 --- !u!1 &1092008429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5461012317739364718, guid: 8592aadc382995b48addf5b60d1b0506,
@@ -7182,94 +7566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f925bb07fa0214c804624e53257f29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Door: {fileID: 1790453137}
---- !u!1001 &1111038013
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 895299158}
-    m_Modifications:
-    - target: {fileID: 1805616304779845484, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0436741
-      objectReference: {fileID: 0}
-    - target: {fileID: 1805616304779845484, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1805616304779845484, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.013
-      objectReference: {fileID: 0}
-    - target: {fileID: 8152119196828189842, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_Name
-      value: DoorPadlock
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.058
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.5429997
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.838
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071079
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.70710576
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8152119196828189842, guid: 8d29ae9d515905c498477249ca01e18f,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1790453137}
-  m_SourcePrefab: {fileID: 100100000, guid: 8d29ae9d515905c498477249ca01e18f, type: 3}
+  Door: {fileID: 1077089211}
 --- !u!1 &1133339267
 GameObject:
   m_ObjectHideFlags: 0
@@ -7472,19 +7769,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -7536,10 +7821,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 3
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1 &1251527349
 GameObject:
@@ -8585,10 +8870,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 895299158}
     m_Modifications:
-    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+    - target: {fileID: 270538126797168296, guid: f412a98d196d62141b7567118ad5a7ac,
         type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.15000002
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 270538126797168296, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 270538126797168296, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 270538126797168296, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
         type: 3}
@@ -8640,14 +8940,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7500824787153176935, guid: f412a98d196d62141b7567118ad5a7ac,
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
         type: 3}
-      propertyPath: m_Name
-      value: Keycard
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_ThrowOnDetach
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_SmoothPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_SmoothRotation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7500824787153176935, guid: f412a98d196d62141b7567118ad5a7ac,
         type: 3}
-      propertyPath: m_TagString
+      propertyPath: m_Name
       value: Keycard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9518,19 +9838,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -9582,10 +9890,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 2
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1 &1502020287
 GameObject:
@@ -9921,19 +10229,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 4
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -9985,10 +10281,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 4
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1001 &1532765803
 PrefabInstance:
@@ -10520,19 +10816,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -10584,10 +10868,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 7
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1 &1574436964
 GameObject:
@@ -10679,19 +10963,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 8
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -10743,10 +11015,10 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  ButtonNumber: 0
+  ButtonNumber: 8
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1001 &1589478578
 PrefabInstance:
@@ -11450,8 +11722,8 @@ Transform:
   m_GameObject: {fileID: 1710009104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8947, y: 1.3371, z: -3.4332}
-  m_LocalScale: {x: 0.13019408, y: 2.6542654, z: 4.984564}
+  m_LocalPosition: {x: 1.8947, y: 1.3371, z: -3.4477}
+  m_LocalScale: {x: 0.13019408, y: 2.6542654, z: 4.955685}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1784103105}
@@ -11802,19 +12074,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1605046670}
-        m_TargetAssemblyTypeName: NumberPad, Assembly-CSharp
-        m_MethodName: ButtonPressed
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -11869,7 +12129,7 @@ MonoBehaviour:
   ButtonNumber: 0
   TouchedMaterial: {fileID: 7770318624900243041, guid: 44f3430c585c6514985b591c28e05a78,
     type: 3}
-  NormalMaterial: {fileID: 0}
+  NormalMaterial: {fileID: 2100000, guid: 499970de2f77e7540b3bf4b1c97a4dac, type: 2}
   LinkedKeypad: {fileID: 1605046670}
 --- !u!1 &1776776838
 GameObject:
@@ -11937,32 +12197,6 @@ Transform:
   - {fileID: 1710009105}
   m_Father: {fileID: 1532765804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1790453135 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8152119196828189842, guid: 8d29ae9d515905c498477249ca01e18f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1111038013}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1790453136 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8820851391907372584, guid: 8d29ae9d515905c498477249ca01e18f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1111038013}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1790453137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790453135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eb953c0d16c41e41ae96d42b7daafe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openPosition: {x: 0.058, y: -1.543, z: 0.05}
-  doorSpeed: 2
 --- !u!1 &1794957486
 GameObject:
   m_ObjectHideFlags: 0
@@ -12582,13 +12816,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904201517}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.043, y: 0, z: 0.103}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.012, y: 0.036, z: 0.119}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1805789892}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &1923384545
 GameObject:
   m_ObjectHideFlags: 0

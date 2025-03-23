@@ -5,7 +5,7 @@ using UnityEngine;
 public class Keycardreader : MonoBehaviour
 {
 
-    public SlidingDoor Door;
+    public SlidingDoorFunctionality Door;
 
     // Start is called before the first frame update
     void Start()
