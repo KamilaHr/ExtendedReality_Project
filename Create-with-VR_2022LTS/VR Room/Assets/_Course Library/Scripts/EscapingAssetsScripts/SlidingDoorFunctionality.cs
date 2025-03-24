@@ -6,8 +6,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class SlidingDoorFunctionality : MonoBehaviour
 {
     [Header("Sliding Settings")]
-    public float minX = 0f;
-    public float maxX = 2f;
+    public float minZ = 0f;
+    public float maxZ = 2f;
     public float smoothness = 10f;
 
     [Header("Unlock Settings")]
@@ -31,18 +31,17 @@ public class SlidingDoorFunctionality : MonoBehaviour
     {
         if (!isBeingGrabbed) return;
 
-        // Calculate hand movement along X
+        // Calculate hand movement along Z
         Transform interactor = grabInteractable.interactorsSelecting[0].transform;
-        float deltaX = interactor.position.x - lastHandPosition.x;
+        float deltaZ = interactor.position.z - lastHandPosition.z;
         lastHandPosition = interactor.position;
 
-        // Move door along X
-        Vector3 newPosition = transform.position + new Vector3(deltaX, 0, 0);
-        newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
-        Vector3 clamped = new Vector3(Mathf.Clamp(newPosition.z, minX, maxX),
-            transform.position.y,
-            transform.position.x);
-        transform.position = Vector3.Lerp(transform.position, clamped, Time.deltaTime * smoothness);
+        // Move door along Z only
+        float newZ = Mathf.Clamp(transform.position.z + deltaZ, minZ, maxZ);
+        Vector3 targetPosition = new Vector3(transform.position.x, transform.position.y, newZ);
+
+        // Smooth movement
+        transform.position = targetPosition;
     }
 
     private void OnGrabbed(SelectEnterEventArgs args)
