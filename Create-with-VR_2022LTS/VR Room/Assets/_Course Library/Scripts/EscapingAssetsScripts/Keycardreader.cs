@@ -6,6 +6,7 @@ public class Keycardreader : MonoBehaviour
 {
 
     public SlidingDoorFunctionality Door;
+    public Light unlockLight;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,9 @@ public class Keycardreader : MonoBehaviour
             Debug.Log("? Keycard Accepted! Unlocking Door...");
             Door.UnlockDoor();
             Destroy(other.gameObject); // Remove the keycard
+
+            if (unlockLight != null)
+                unlockLight.enabled = true;
         }
     }
 
