@@ -6,15 +6,15 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class SlidingDoorFunctionality : MonoBehaviour
 {
     [Header("Sliding Settings")]
-    public float minZ = 0f;
-    public float maxZ = 2f;
-    public float smoothness = 10f;
+    public float minZ = 0.3204f;
+    public float maxZ = 0.8204f;
 
     [Header("Unlock Settings")]
     public bool isUnlocked = false;
     public XRGrabInteractable grabInteractable;
 
-    private Vector3 lastHandPosition;
+    private float initialGrabHandZ;
+    private float initialDoorZ;
     private bool isBeingGrabbed = false;
 
     private void Start()
@@ -23,25 +23,27 @@ public class SlidingDoorFunctionality : MonoBehaviour
         {
             grabInteractable.selectEntered.AddListener(OnGrabbed);
             grabInteractable.selectExited.AddListener(OnReleased);
-            grabInteractable.enabled = false; // Locked at start
+            grabInteractable.enabled = false;
         }
     }
 
     private void Update()
     {
-        if (!isBeingGrabbed) return;
+        if (!isBeingGrabbed || grabInteractable.interactorsSelecting.Count == 0)
+            return;
 
-        // Calculate hand movement along Z
         Transform interactor = grabInteractable.interactorsSelecting[0].transform;
-        float deltaZ = interactor.position.z - lastHandPosition.z;
-        lastHandPosition = interactor.position;
+        Debug.Log("Interactor Z: " + interactor.position.z);
 
-        // Move door along Z only
-        float newZ = Mathf.Clamp(transform.position.z + deltaZ, minZ, maxZ);
-        Vector3 targetPosition = new Vector3(transform.position.x, transform.position.y, newZ);
 
-        // Smooth movement
-        transform.position = targetPosition;
+        float currentHandZ = interactor.position.z;
+
+        // Calculate how far the hand has moved since grab
+        float handDeltaZ = currentHandZ - initialGrabHandZ;
+
+        // Move the door only in +Z direction
+        float newZ = Mathf.Clamp(initialDoorZ + handDeltaZ, minZ, maxZ);
+        transform.position = new Vector3(transform.position.x, transform.position.y, newZ);
     }
 
     private void OnGrabbed(SelectEnterEventArgs args)
@@ -49,12 +51,16 @@ public class SlidingDoorFunctionality : MonoBehaviour
         if (!isUnlocked) return;
 
         isBeingGrabbed = true;
-        lastHandPosition = args.interactorObject.transform.position;
+        Transform interactor = args.interactorObject.transform;
+        initialGrabHandZ = interactor.position.z;
+        initialDoorZ = transform.position.z;
     }
 
     private void OnReleased(SelectExitEventArgs args)
     {
         isBeingGrabbed = false;
+        initialDoorZ = transform.position.z;
+        initialGrabHandZ = 0f;
     }
 
     public void UnlockDoor()
