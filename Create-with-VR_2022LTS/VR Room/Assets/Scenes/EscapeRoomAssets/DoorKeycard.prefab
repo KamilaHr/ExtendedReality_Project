@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1833075139159268812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 270538126797168296, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 270538126797168296, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 270538126797168296, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 270538126797168296, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.43000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.831
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.91200006
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99434906
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.10616033
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 12.188
+      objectReference: {fileID: 0}
+    - target: {fileID: 3827665948705207544, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_MovementType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_ThrowOnDetach
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_SmoothPosition
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_SmoothRotation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477450316221729777, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7500824787153176935, guid: f412a98d196d62141b7567118ad5a7ac,
+        type: 3}
+      propertyPath: m_Name
+      value: Keycard Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f412a98d196d62141b7567118ad5a7ac, type: 3}
